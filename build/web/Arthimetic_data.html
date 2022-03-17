@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Arithmetic data page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>welcome to request page</h1>
+        <p>
+            please please enter the numbers fro processing:
+        </p>
+        <form action="arthmerticDataServlet.do" method ="POST">
+            <table>
+                <tr>
+                    <td>first Number:</td>
+                    <td><input type="text" name ="num1"></td>
+                </tr>
+                <!-- enter the seconde number -->
+                 <tr>
+                    <td>second Number:</td>
+                    <td><input type="text" name ="num2"></td>
+                </tr>
+               <!-- please select the operation you want to perfoms -->
+                  <tr>
+                    <td>choose the operation:</td>
+                    <td>
+                        <select name ="op">
+                            <option value ="+">+</option>
+                             <option value ="-">-</option>
+                             <option value ="*">*</option>
+                               <option value ="/">/</option>
+                        </select>
+                                
+                    </td>
+                </tr>
+                <!-- submit request -->
+                <tr>
+                    <td></td>
+                    <td><input type="SUBMIT" name ="SUBMIT"></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
